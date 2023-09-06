@@ -1,0 +1,77 @@
+////
+README.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: etalab-2.0
+////
+
+# Documentation technique applicative
+
+Ce modèle recense les principales documentations techniques nécessaires pour assurer le fonctionnement courant d'une application informatique au sein d'un système d'informations.
+
+Il s'inspire fortement du link:https://github.com/bflorat/modele-da[modèle de dossier d'architecture] de Bertrand Florat qu'il complète et étend.
+
+Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrteurs, rssi) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
+
+Les équipes qui assurent le fonctionnement courant des applications ("Ops", "exploitants", "administrateurs", etc.) doivent, sans avoir besoin de connaître l'intégralité du dossier d'architecture, pouvoir disposer des informations essentielles nécessaires au fonctionnement de l'outil dans le contexte précis du SI où l'application s'intègre. Les équipes doivent aussi pouvoir retrouver les éléments précis de l'implémentation réelle de l'application, et les modalités de son évolution. Ces éléments correspondent aux phases "construire" et "Fournir et soutenir" de la chaîne de valeur des services selon ITIL v4.
+
+Pour COBIT 2019, ces documentations font partie des domaines BAI (Bâtir, acquérir, implémenter) et DSS (Délivrer, Servir et Souternir)
+
+Ces informations sont réparties dans 4 dossiers :
+
+.Dossiers du modèle
+[cols="1a,3a,1a,1a"]
+|===
+^| Dossier ^| Description ^| Emplacement chaîne de valeur ITIL ^|Processus COBIT
+
+| link:DA/architecture.adoc[Dossier d'architecture] | Il détaille l'architecture complète de l'application. Il est composé soit de l'ensemble des vues exposées plus haut, soit d'une synthèse applicable à l'application (p. ex si elle est fournie par l'éditeur) | Conception & transition | BAI03, BAI04, BAI06
+
+| link:DIN/installation.adoc[dossier d'installation]| Il détaille les modalités précises et concrètes de la première installation de l'application. Cela permet de vérifier sa conformité au document d'architecture. | Obtenir/Constuire | BAI10
+
+| link:DEX/exploitation.adoc[dossier d'exploitation] | Il détaille les procédures et informations utiles et nécessaires au bon fonctionnement de la solution | Fournir et soutenir| DSS01
+
+| link:DMV/montee-de-version.adoc[dossier de montée de version] | Il détaille les informations techniques et opérationnelles nécessaires pour mettre à jour la version. Il définit la continuité de fonctionnement du service. | Fournir et soutenir | BAI06, DSS04
+
+|===
+
+## Principes du modèle
+
+Chacune des 4 documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
+
+Le dossier comprends également un exemple de glossaire, à l'image de celui du dossier d'architecture.
+
+## Utilisation du modèle
+
+//TODO, voir exemple bertrand
+
+### Présentation générale
+
+### Conseils pour la rédaction
+
+### Que ne trouve-t-on *PAS* dans ce document ?
+
+## FAQ
+
+## Licence
+* Copyright (c) 2023 Vincent Corrèze et contributeurs
+* Ce modèle est soumis à la licence ouverte version 2.0 https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf[etalab-2.0]
+* Le modèle de dossier d'architecture utilisé est (c) Bertrand Florat et contributeurs, il est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0].
+* Vous pouvez créer votre propre modèle issu de celui-ci dès lors qu'il mentionne la paternité de l'information (source et date de dernière consultation). Vous pouvez notamment vous acquitter de cette condition en renvoyant par un lien hypertexte vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et en assurant une mention effective de sa paternité. Attention cependant aux conditions particulières de licence du modèle de dossier d'architecture.
+* Un dossier issu de ces modèles n'a pas à appliquer ces licences. Il est cependant recommandé d'y inclure un lien vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et/ou vers link:https://github.com/bflorat/modele-da[].
+
+## Remerciements
+* Bertrand Florat, pour l'inspiration et le modèle de dossier d'architecture
+
+## Bibliographie sommaire
+
+### Référentiels
+
+* Référentiel ITIL : link:https://www.axelos.com/certifications/itil-service-management[ITIL v4]
+* Framework COBIT : link:https://www.isaca.org/resources/cobit[COBIT]
+
+### Exemples et inspirations
+
+* Documentation d'exploitation du logiciel VITAM : link:http://www.programmevitam.fr/ressources/DocCourante/html/exploitation/introduction.html#but-de-cette-documentation_[DEX Vitam]
+* Méthodologie Hermes de la confédération suisse, partie résultats : link:https://www.hermes.admin.ch/fr/gestion-du-projet/comprendre/resultats/manuel-d-exploitation.html[HERMES Online]
+* Dossier d'exploitation du logiciel TumoroteK : link:https://tumorotek.github.io/TumoroteK/TumoroteK-DossierExploitation.pdf[DEX TumoroteK]

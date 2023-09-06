@@ -1,0 +1,7 @@
+## SPDX-FileCopyrightText: 2023 Vincent Corrèze
+##
+## SPDX-License-Identifier: CC0-1.0
+
+[submodule "DA"]
+	path = DA
+	url = https://github.com/bflorat/modele-da

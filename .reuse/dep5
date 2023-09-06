@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: modele-dossierapplicatif
+Upstream-Contact: Vincent Corrèze <8751331+vcorreze@users.noreply.github.com>
+Source: https://github.com/vcorreze/modele-dossierapplicatif
+
+Files: DA/*
+Copyright: Copyright (c) 2017-2023 Bertrand Florat et contributeurs
+License: CC-BY-SA-4.0
