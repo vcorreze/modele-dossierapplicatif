@@ -1,0 +1,23 @@
+////
+DIN-proc-technique.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: etalab-2.0
+////
+
+# Dossier d'installation - procédure technique
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+*Dernière modification* : {docdate}
+
+*Date dernière revue globale* : _<Faire une revue globale du document en fin d'installation et mentionner la date ici>_
+
+*Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
+
+## Introduction

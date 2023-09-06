@@ -12,7 +12,8 @@ Ce modèle recense les principales documentations techniques nécessaires pour a
 
 Il s'inspire fortement du link:https://github.com/bflorat/modele-da[modèle de dossier d'architecture] de Bertrand Florat qu'il complète et étend.
 
-Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrteurs, rssi) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
+## Principes du modèle
+Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrteurs, RSSI) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
 
 Les équipes qui assurent le fonctionnement courant des applications ("Ops", "exploitants", "administrateurs", etc.) doivent, sans avoir besoin de connaître l'intégralité du dossier d'architecture, pouvoir disposer des informations essentielles nécessaires au fonctionnement de l'outil dans le contexte précis du SI où l'application s'intègre. Les équipes doivent aussi pouvoir retrouver les éléments précis de l'implémentation réelle de l'application, et les modalités de son évolution. Ces éléments correspondent aux phases "construire" et "Fournir et soutenir" de la chaîne de valeur des services selon ITIL v4.
 
@@ -25,21 +26,25 @@ Ces informations sont réparties dans 4 dossiers :
 |===
 ^| Dossier ^| Description ^| Emplacement chaîne de valeur ITIL ^|Processus COBIT
 
-| link:DA/architecture.adoc[Dossier d'architecture] | Il détaille l'architecture complète de l'application. Il est composé soit de l'ensemble des vues exposées plus haut, soit d'une synthèse applicable à l'application (p. ex si elle est fournie par l'éditeur) | Conception & transition | BAI03, BAI04, BAI06
+| link:DA/[Dossier d'architecture] | Il détaille l'architecture complète de l'application. Il est composé soit de l'ensemble des vues exposées plus haut, soit d'une synthèse applicable à l'application (p. ex si elle est fournie par l'éditeur) | Conception & transition | BAI03, BAI04, BAI06
 
-| link:DIN/installation.adoc[dossier d'installation]| Il détaille les modalités précises et concrètes de la première installation de l'application. Cela permet de vérifier sa conformité au document d'architecture. | Obtenir/Constuire | BAI10
+| link:DIN/[dossier d'installation]| Il détaille les modalités précises et concrètes de la première installation de l'application. Cela permet de vérifier sa conformité au document d'architecture. | Obtenir/Constuire | BAI10
 
-| link:DEX/exploitation.adoc[dossier d'exploitation] | Il détaille les procédures et informations utiles et nécessaires au bon fonctionnement de la solution | Fournir et soutenir| DSS01
+| link:DEX/dossier-exploitation.adoc[dossier d'exploitation] | Il détaille les procédures et informations utiles et nécessaires au bon fonctionnement de la solution | Fournir et soutenir| DSS01
 
-| link:DMV/montee-de-version.adoc[dossier de montée de version] | Il détaille les informations techniques et opérationnelles nécessaires pour mettre à jour la version. Il définit la continuité de fonctionnement du service. | Fournir et soutenir | BAI06, DSS04
+| link:DMV/[dossier de montée de version] | Il détaille les informations techniques et opérationnelles nécessaires pour mettre à jour la version. Il définit la continuité de fonctionnement du service. | Fournir et soutenir | BAI06, DSS04
 
 |===
 
-## Principes du modèle
+Chaque document correspond à son besoin propre, et doit pouvoir être consulté sans être contraint de se référer à d'autres document. Les liens vers d'autres documentation (dossier d'architecture en particulier, ou documentation en ligne) ne doivent être présents que pour servir de référence ou diagnostiquer un point précis.
 
 Chacune des 4 documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
 
-Le dossier comprends également un exemple de glossaire, à l'image de celui du dossier d'architecture.
+Les modalités d'acquisition des solutions techniques sont telles que généralement, l'ensemble des éléments de documentation présentés ici ne sont pas disponibles. Par exemple, lors de l'implémentation d'un outil logiciel d'éditeur le détail de la vue architecture applicative est rarement fourni, et le dossier technique de montée de version est réservé à l'éditeur.
+
+Il est donc fréquent que le dossier de documentation applicative soit partiel ou incomplet. Cependant nous recommandons que *toute application en production dispose _a minima_ d'un dossier d'exploitation*.
+
+Le dossier comprends également un exemple de glossaire, à l'image de celui du dossier d'architecture. Il est entendu qu'un dossier complet ne doit contenir qu'un seul glossaire.
 
 ## Utilisation du modèle
 
