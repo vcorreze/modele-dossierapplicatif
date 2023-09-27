@@ -13,11 +13,11 @@ Ce modèle recense les principales documentations techniques nécessaires pour a
 Il s'inspire fortement du link:https://github.com/bflorat/modele-da[modèle de dossier d'architecture] de Bertrand Florat qu'il complète et étend.
 
 ## Principes du modèle
-Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrteurs, RSSI) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
+Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrateurs, RSSI) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
 
 Les équipes qui assurent le fonctionnement courant des applications ("Ops", "exploitants", "administrateurs", etc.) doivent, sans avoir besoin de connaître l'intégralité du dossier d'architecture, pouvoir disposer des informations essentielles nécessaires au fonctionnement de l'outil dans le contexte précis du SI où l'application s'intègre. Les équipes doivent aussi pouvoir retrouver les éléments précis de l'implémentation réelle de l'application, et les modalités de son évolution. Ces éléments correspondent aux phases "construire" et "Fournir et soutenir" de la chaîne de valeur des services selon ITIL v4.
 
-Pour COBIT 2019, ces documentations font partie des domaines BAI (Bâtir, acquérir, implémenter) et DSS (Délivrer, Servir et Souternir)
+Pour COBIT 2019, ces documentations font partie des domaines BAI (Bâtir, acquérir, implémenter) et DSS (Délivrer, Servir et Soutenir)
 
 Ces informations sont réparties dans 4 dossiers :
 
@@ -48,13 +48,22 @@ Le dossier comprends également un exemple de glossaire, à l'image de celui du 
 
 ## Utilisation du modèle
 
-//TODO, voir exemple bertrand
-
 ### Présentation générale
+* ce modèle est au format https://asciidoc.org[asciidoc]. De la même façon que pour le dossier d'architecture, nous préconisons un format *textuel et lisible* (type markdown), dont le suivi de version peut être facilement implémenté dans un outil dédié ce qui permet de maintenir la documentation.
+* Les modèles proposés sont évidemment perfectibles, et toute proposition d'amélioration est la bienvenue.
+* L'ensemble est volontairement riche en *explications et exemples* pour permettre une meilleure compréhension des items présentés.
+* Des link:modeles-vierges[modèles vierges] sont fournis.
 
 ### Conseils pour la rédaction
+* *Restez bref*, le lecteur doit pouvoir parcourir rapidement les documents pour atteindre la partie qu'il recherche.
+* positionnez toujours une *table des matières*, pour les mêmes raisons que ci-dessus.
+* *Ne pas se répéter* (Principe link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY]). Si un paragraphe fait référence à une spécification ou à un autre paragraphe, utilisez un lien. Si le domaine concerné respecte une politique globale de votre organisation, orientez le lecteur vers cette politique.
+* Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide.
+* Eventuellement, il est possible de séparer le dossier d'architecture en plusieurs document par chapitre pour en faciliter la lecture.
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
+* les *règles d'architecture de référence* (communes à toutes les applications);
+* les *documentations utilisateurs* : le dossier applicatif concerne l'exploitation (maintien en conditions opérationnelles et de sécurité) de l'application, il ne recense pas de documents destinés aux utilisateurs fonctionnels.
 
 ## FAQ
 
