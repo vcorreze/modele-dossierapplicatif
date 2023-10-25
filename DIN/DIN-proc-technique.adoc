@@ -21,3 +21,50 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 *Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
 
 ## Introduction
+
+La procédure technique d'installation indique les modalités et les conditions de validation de l'installation en production de l'outil.
+
+## Documents de référence
+
+.Documents internes
+[cols="1,3,1"]
+|===
+| Nom | titre/URi du document | Version
+
+| PSSI | Politique de sécurité | 2.3.0
+
+| DA | link:../README.adoc[Dossier applicatif] | 1.0.2
+
+|===
+
+## Procédure technique d'installation
+
+[TIP]
+====
+la procédure technique d'installation indique précisément chaque opération technique réalisée durant le déploiement, et les choix opérés dans les utilitaires d'installation.
+
+Ce document peut aussi pointer directement vers une documentation d'installation disponible (en ligne, ou fournie par un intégrateur).
+====
+
+## Modalités d'accès et profils
+
+[TIP]
+====
+Fournir une synthèse des principaux profils utilisateurs de l'application, ainsi qu'une indication du coffre-fort d'authentification utilisé.
+====
+
+## Modalités de déploiement
+
+[TIP]
+====
+On indiquera aussi les modalités de déploiement de l'outil auprès des utilisateurs finaux. Il est important d'anticiper le temps de réalisation de ce déploiement, en particulier s'il s'agit d'un client lourd.
+====
+
+## Contrôle de conformité technique
+
+[TIP]
+====
+Une checklist, ou une procédure complète de test doit permettre de vérifier la conformité technique de l'outil à l'architecture prévue dans le dossier d'architecture.
+
+Ces tests de conformité doivent aussi intégrer le respect des conditions de sécurité de l'application.
+====

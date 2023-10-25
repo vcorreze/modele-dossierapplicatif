@@ -6,7 +6,7 @@ SPDX-FileCopyrightText: 2023 Vincent Corrèze
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
-# Dossier d'installation - procédure fonctionnelle
+# Dossier d'installation
 :sectnumlevels: 4
 :toclevels: 4
 :sectnums: 4
@@ -21,3 +21,81 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 *Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
 
 ## Introduction
+
+La procédure fonctionnelle d'installation indique les modalités et les conditions de validation de l'installation en production de l'outil.
+
+## Documents de référence
+
+.Documents internes
+[cols="1,3,1"]
+|===
+| Nom | titre/URi du document | Version
+
+| PSSI | Politique de sécurité | 2.3.0
+
+| DA | link:../README.adoc[Dossier applicatif] | 1.0.2
+
+|===
+
+## Organisation de l'installation
+
+### Rôles et Coordonnées des interlocuteurs
+
+.Rôles à l'installation
+[cols="1,3,2,1,1"]
+|===
+
+| Rôle | Réalise | Nom | courriel | téléphone
+
+| Technicien | Réalise l'installation | | |
+
+| Utilisateurs référents | Vérifient le bon fonctionnement | | |
+
+| Responsable applicatif | Valide l'installation | | |
+
+|===
+
+## Modalités de mise en production
+
+[TIP]
+====
+Une application est rarement installée "à neuf" et prends le plus souvent la suite d'un outil précédent. Il convient de porter une attention particulière à la procédure de mise en production, c'est à dire l'organisation concrète et planifiée du passage de l'ancien outil au nouveau.
+
+La procédure de mise en production doit anticiper la question des données (quel transfert, quelle fraîcheur, combien de ressaisies, etc.) et de l'indisponibilité (combien de temps, quelle information transmise aux utilisateur.rices finaux, etc.)
+====
+
+### Transfert de données
+
+[TIP]
+====
+Le dossier fonctionnel d'installation doit anticiper la question des données, qu'elles proviennent de l'ancien outil ou d'une saisie d'un nouveau paramétrage. En particulier il faut prévoir les modalités de transfert, de contrôle de la qualité des données et si besoin les temps de resaisie de certains paramétrages.
+====
+
+### Planification de l'installation
+
+[TIP]
+====
+Il est nécessaire de planifier précisément l'ensemble des phases de la mise en production. On intègre bien sûr ici les temps d'installation et de déploiement qui relèvent de la procédure technique d'installation.
+
+On étudiera en particulier les temps d'indisponibilité des outils (ancien, nouveau) et les modalités de communication aux utilisateur.rices de la solution. Ce planning permet aussi de confirmer les moments où sont mobilisés les interlocuteur.rices du projet.
+====
+
+## Vérification d'aptitude au bon fonctionnement
+
+### Plan de test
+
+[TIP]
+====
+Il est important que l'outil nouvellement implémenté soit testé, sur un plan fonctionnel, par ses utilisateur.rices finales qui doivent valider que les fonctions attendues correspondent au besoin exprimé dans le dossier d'architecture ou le cahier des charges. Ces tests doivent faire référence aux _exigences_ du système et correspondre à un jeu de données précis (_cas de test_). Ceci permet d'exécuter plusieurs _campagnes de test_ afin de lever toutes les non-conformités fonctionnelles.
+
+Le document d'installation doit mentionner _a minima_ une synthèse des tests effectués, afin de confirmer le bon fonctionnement global du système.
+
+Cet ensemble de test peut faire l'objet d'un plan de test complet et détaillé, pour lequel on pourra se tourner vers un outil de gestion des tests comme link:https://www.squashtest.com/[SquashTest] ou link:https://kiwitcms.org/[KiwiTCMS].
+====
+
+### Recette
+
+[TIP]
+====
+Le dossier fonctionnel doit indiquer la date précise de la recette fonctionnelle, et les éventuelles réserves prononcées sur la recette.
+====
