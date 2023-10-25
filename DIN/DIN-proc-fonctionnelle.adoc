@@ -6,7 +6,7 @@ SPDX-FileCopyrightText: 2023 Vincent Corrèze
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
-# Dossier d'installation
+# Dossier d'installation - procédure fonctionnelle
 :sectnumlevels: 4
 :toclevels: 4
 :sectnums: 4

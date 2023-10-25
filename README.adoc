@@ -28,7 +28,7 @@ Ces informations sont réparties dans 4 dossiers :
 
 | link:DA/[Dossier d'architecture] | Il détaille l'architecture complète de l'application. Il est composé soit de l'ensemble des vues exposées plus haut, soit d'une synthèse applicable à l'application (p. ex si elle est fournie par l'éditeur) | Conception & transition | BAI03, BAI04, BAI06
 
-| link:DIN/[dossier d'installation]| Il détaille les modalités précises et concrètes de la première installation de l'application. Cela permet de vérifier sa conformité au document d'architecture. | Obtenir/Constuire | BAI10
+| link:DIN/[dossier d'installation]| Il détaille les modalités précises et concrètes de la première installation de l'application. Cela permet de vérifier sa conformité au document d'architecture. | Obtenir/Construire | BAI10
 
 | link:DEX/dossier-exploitation.adoc[dossier d'exploitation] | Il détaille les procédures et informations utiles et nécessaires au bon fonctionnement de la solution | Fournir et soutenir| DSS01
 
@@ -59,7 +59,7 @@ Le dossier comprends également un exemple de glossaire, à l'image de celui du 
 * positionnez toujours une *table des matières*, pour les mêmes raisons que ci-dessus.
 * *Ne pas se répéter* (Principe link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY]). Si un paragraphe fait référence à une spécification ou à un autre paragraphe, utilisez un lien. Si le domaine concerné respecte une politique globale de votre organisation, orientez le lecteur vers cette politique.
 * Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide.
-* Eventuellement, il est possible de séparer le dossier d'architecture en plusieurs document par chapitre pour en faciliter la lecture.
+* Éventuellement, il est possible de séparer le dossier d'architecture en plusieurs document par chapitre pour en faciliter la lecture.
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
 * les *règles d'architecture de référence* (communes à toutes les applications);
