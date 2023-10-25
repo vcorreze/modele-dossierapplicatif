@@ -3,7 +3,7 @@ DMV-proc-fonctionnelle.adoc
 
 SPDX-FileCopyrightText: 2023 Vincent Corrèze
 
-SPDX-License-Identifier: etalab-2.0
+SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
 # Dossier de Montée de Version - procédure fonctionnelle

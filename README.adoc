@@ -3,7 +3,7 @@ README.adoc
 
 SPDX-FileCopyrightText: 2023 Vincent Corrèze
 
-SPDX-License-Identifier: etalab-2.0
+SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
 # Documentation technique applicative
@@ -38,7 +38,7 @@ Ces informations sont réparties dans 4 dossiers :
 
 Chaque document correspond à son besoin propre, et doit pouvoir être consulté sans être contraint de se référer à d'autres document. Les liens vers d'autres documentation (dossier d'architecture en particulier, ou documentation en ligne) ne doivent être présents que pour servir de référence ou diagnostiquer un point précis.
 
-Chacune des 4 documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
+Chacune des documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
 
 Les modalités d'acquisition des solutions techniques sont telles que généralement, l'ensemble des éléments de documentation présentés ici ne sont pas disponibles. Par exemple, lors de l'implémentation d'un outil logiciel d'éditeur le détail de la vue architecture applicative est rarement fourni, et le dossier technique de montée de version est réservé à l'éditeur.
 
@@ -52,7 +52,7 @@ Le dossier comprends également un exemple de glossaire, à l'image de celui du 
 * ce modèle est au format https://asciidoc.org[asciidoc]. De la même façon que pour le dossier d'architecture, nous préconisons un format *textuel et lisible* (type markdown), dont le suivi de version peut être facilement implémenté dans un outil dédié ce qui permet de maintenir la documentation.
 * Les modèles proposés sont évidemment perfectibles, et toute proposition d'amélioration est la bienvenue.
 * L'ensemble est volontairement riche en *explications et exemples* pour permettre une meilleure compréhension des items présentés.
-* Des link:modeles-vierges[modèles vierges] sont fournis.
+* Des link:./modeles-vierges[modèles vierges] sont fournis.
 
 ### Conseils pour la rédaction
 * *Restez bref*, le lecteur doit pouvoir parcourir rapidement les documents pour atteindre la partie qu'il recherche.
@@ -65,13 +65,14 @@ Le dossier comprends également un exemple de glossaire, à l'image de celui du 
 * les *règles d'architecture de référence* (communes à toutes les applications);
 * les *documentations utilisateurs* : le dossier applicatif concerne l'exploitation (maintien en conditions opérationnelles et de sécurité) de l'application, il ne recense pas de documents destinés aux utilisateurs fonctionnels.
 
-## FAQ
-
 ## Licence
 * Copyright (c) 2023 Vincent Corrèze et contributeurs
-* Ce modèle est soumis à la licence ouverte version 2.0 https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf[etalab-2.0]
+* Ce modèle est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0] : Creative Commons Attribution - Partage à l'identique V4.0
 * Le modèle de dossier d'architecture utilisé est (c) Bertrand Florat et contributeurs, il est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0].
-* Vous pouvez créer votre propre modèle issu de celui-ci dès lors qu'il mentionne la paternité de l'information (source et date de dernière consultation). Vous pouvez notamment vous acquitter de cette condition en renvoyant par un lien hypertexte vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et en assurant une mention effective de sa paternité. Attention cependant aux conditions particulières de licence du modèle de dossier d'architecture.
+* Vous pouvez créer votre propre modèle issu de celui-ci dès lors :
+** qu'il soit redistribué sous la même licence et mentionne un lien vers https://creativecommons.org/licenses/by-sa/4.0/
+** qu'il précise le nom du créateur (Vincent Corrèze)
+** qu'il renvoie par un lien hypertexte vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et assure une mention effective de sa paternité (source et date de consultation, ou identifiant du commit utilisé).
 * Un dossier issu de ces modèles n'a pas à appliquer ces licences. Il est cependant recommandé d'y inclure un lien vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et/ou vers link:https://github.com/bflorat/modele-da[].
 
 ## Remerciements
