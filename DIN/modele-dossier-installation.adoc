@@ -1,0 +1,86 @@
+////
+modele-dossier-installation.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Dossier d'installation
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+*Dernière modification* : {docdate}
+
+*Date d'installation* : _<Faire une revue globale du document en fin d'installation et mentionner la date ici>_
+
+*Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
+
+## Documents de référence
+
+.Documents internes
+[cols="1,3,1"]
+|===
+| Nom | titre/URi du document | Version
+
+| | |
+
+|===
+
+## Déroulement de l'installation
+
+### Rôles et coordonnées des interlocuteurs
+
+TIP: indiquer les rôles des interlocuteurs, renvoyez si nécessaire vers le DEX.
+
+.Rôles à l'installation
+[cols="1,3,2,1,1"]
+|===
+
+| Rôle | Réalise | Nom | courriel | téléphone
+
+| | | |
+
+|===
+
+### Modalités de mise en production
+
+TIP: Indiquez les modalités organisationnelles mises en oeuvre.
+
+### Déroulement technique de l'installation
+
+TIP: indiquez le déroulement technique, et les choix opérés dans l'installation
+
+### Transfert de données
+
+TIP: précisez si des données ont été intégrées, si l'intégration a généré des erreurs, et si oui, lesquelles.
+
+### Modalités d'accès et profils de référence
+
+TIP: indiquez les principaux profils et les modalités d'accès de l'administrateur
+
+#### Planification de l'installation
+
+TIP: décrire la planification choisie pour l'installation
+
+## Vérification d'aptitude au bon fonctionnement
+
+### Contrôle de conformité technique
+
+TIP: indiquez la checklist de conformité technique
+
+### Plan de test fonctionnel
+
+TIP: référencer ici le plan de test fonctionnel, et ses principaux modules
+
+### Recette
+
+TIP: indiquez la date, les personnes et les éventuelles réserves émises à la recette
+
+* Date de recette : _<indiquez la date>_
+* Valideurs : _<Personnes ayant validé la recette>_
+* Réserves : _<réserves émises à la recette>_
