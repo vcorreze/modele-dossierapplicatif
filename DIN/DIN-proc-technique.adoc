@@ -41,9 +41,13 @@ La procédure technique d'installation indique les modalités et les conditions 
 
 [TIP]
 ====
-la procédure technique d'installation indique précisément chaque opération technique réalisée durant le déploiement, et les choix opérés dans les utilitaires d'installation.
+la procédure technique d'installation indique précisément chaque opération technique réalisée durant le déploiement, et les *choix opérés* dans les utilitaires d'installation (par exemple le choix d'un encodage par défaut pour l'installation d'un système de gestion de base de données).
 
 Ce document peut aussi pointer directement vers une documentation d'installation disponible (en ligne, ou fournie par un intégrateur).
+====
+
+====
+*Exemple* : On installe le module sgbd MariaDB en activant l'encodage `utf8-general-ci`
 ====
 
 ## Modalités d'accès et profils
@@ -53,11 +57,19 @@ Ce document peut aussi pointer directement vers une documentation d'installation
 Fournir une synthèse des principaux profils utilisateurs de l'application, ainsi qu'une indication du coffre-fort d'authentification utilisé.
 ====
 
-## Modalités de déploiement
+## Déploiement du client
 
 [TIP]
 ====
-On indiquera aussi les modalités de déploiement de l'outil auprès des utilisateurs finaux. Il est important d'anticiper le temps de réalisation de ce déploiement, en particulier s'il s'agit d'un client lourd.
+décrire ici les modalités techniques de déploiement des modules clients de l'application. Ces modules peuvent nécessiter l'installation préalable de librairies, framework ou autre module qu'il est important de décrire ici. On précisera les choix à opérer dans les modules d'installation.
+====
+
+====
+*Exemple 1* : le déploiement auprès des clients se fera par l'affichage d'une url pointant vers le serveur.
+====
+
+====
+*Exemple 2* : le déploiement du client nécessite l'installation de python3.11 sur les postes des utilisateurs. On exécute ensuite le client de l'application en laissant toutes les options par défaut.
 ====
 
 ## Contrôle de conformité technique

@@ -21,3 +21,70 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 *Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
 
 ## Introduction
+
+On décrit ici les modalités techniques de la montée de version.
+
+## Modalités de montée de version
+
+[TIP]
+====
+Les évolutions de version d'une application sont généralement effectuées selon trois modalités :
+
+- Mise à jour directement sur l'instance de production
+- Construction d'une instance parallèle et migration
+- livraison continue d'évolutions poussées en production, généralement par un outil dédié.
+
+Quelle que soit la modalité concernée, les éléments ci-dessous doivent être préparés pour assurer une montée de version.
+====
+
+### Sauvegarde de la production
+
+[TIP]
+====
+*Toute montée de version doit s'assurer de disposer d'une sauvegarde de l'environnement de production*.
+
+Il est généralement utile de disposer d'une sauvegarde dédiée *au moment du déclenchement* de l'opération technique, pour disposer des données les plus fraîches et de l'applicatif effectivement en production au moment de l'opération (_tout n'est pas toujours documenté..._)
+
+On sauvegardera si possible :
+
+- Les données, dans le format utilisé par l'applicatif (dump de base par exemple)
+- L'applicatif (répertoire de l'application, ou dump applicatif s'il est prévu)
+- L'environnement c'est à dire l'ensemble des couches de fonctionnement de l'application. Ceci correspond souvent à utiliser les possibilités de snapshot dans les environnement virtualisés ou de dump des conteneurs en environnement conteneurisé.
+====
+
+### Opérations de montée de version
+
+[TIP]
+====
+Décrire ici le déroulement technique de la montée de version. Ce déroulement peut renvoyer vers des documentations en ligne ou une documentation éditeur.
+====
+
+### Déploiement
+
+[TIP]
+====
+Donner les modalités concrètes du déploiement de l'application.
+====
+
+====
+*Exemple* : Le déploiement s'effectuera par mise à jour de l'URl disponible sur l'intranet.
+====
+
+### Retour arrière
+
+[TIP]
+====
+La procédure technique doit disposer des consignes explicites pour réaliser un retour à la version antérieure. Les différentes modalités de sauvegarde, les nombreuses utilitaires permettent généralement plusieurs manières de reconstruire l'environnement de production.
+
+Dans le stress d'une décision de retour arrière, les intervenant.es doivent disposer d'un déroulé clair et testé de la méthode choisie pour le retour arrière.
+====
+
+====
+*Exemple* :
+
+- [ ] Se connecter à l'interface de gestion de la virtualisation https://mavirtualisation.mondomaine.fr
+- [ ] sélectionner la machine virtuelle de l'application
+- [ ] sélectionner l'action "restaurer une snapshot"
+- [ ] vérifier l'accès à l'application
+- [ ] faire contrôler par un.e utilisateur.rice le bon fonctionnement
+====
