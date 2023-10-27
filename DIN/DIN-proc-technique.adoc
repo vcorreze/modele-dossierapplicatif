@@ -47,7 +47,7 @@ Ce document peut aussi pointer directement vers une documentation d'installation
 ====
 
 ====
-*Exemple* : On installe le module sgbd MariaDB en activant l'encodage `utf8-general-ci`
+*Exemple* : On installe le module SGBD MariaDB en activant l'encodage `utf8-general-ci`
 ====
 
 ## Modalités d'accès et profils
