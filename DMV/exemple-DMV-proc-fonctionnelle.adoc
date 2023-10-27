@@ -1,0 +1,114 @@
+////
+DMV-proc-fonctionnelle.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Dossier de Montée de Version - procédure fonctionnelle
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+*Dernière modification* : {docdate}
+
+*Date dernière revue globale* : 2023-05-25
+
+*Statut du document* : Finalisé
+
+## Introduction
+
+La procédure fonctionnelle de montée de version indique les modalités et les conditions de validation d'une montée de version de l'outil.
+
+## Documents de référence
+
+.Documents internes
+[cols="1,3,1"]
+|===
+| Nom | titre/URi du document | Version
+
+| PSSI | Politique de sécurité | 2.3.0
+
+| DA | link:../README.adoc[Dossier applicatif] |
+|===
+
+## Test de la nouvelle version
+
+Le plan de test est décrit dans le répertoire `04-Plan de test` du dossier d'exploitation A423.
+
+### Recette
+
+Les recettes validées sont les suivantes :
+
+.Montées de version
+[cols="1,^1,^2,3"]
+|===
+| Date | Version | Valideur | Commentaire
+
+| 20221102 | 1.3.5 | Resp. métier | bug #55438 restant.
+| 20230503 | 1.4.0 | Resp. métier | ajout du module impression pdf.
+|===
+
+## Modalités de montée de version
+
+### Rôles et coordonnées des interlocuteurs
+
+Les interlocuteurs concernés sont précisés dans le Dossier d'Exploitation.
+
+### Organisation de la montée de version.
+
+La montée de version est planifiée au moins 15 jours à l'avance avec le responsable applicatif. Les caractéristiques de l'application rendent nécessaire une indisponibilité d'une demi-journée.
+
+Le déroulement de la campagne de test doit avoir été effectué la veille, et la matinée du jour de migration est consacrée aux corrections de bugs constatés lors des tests.
+
+L'indisponibilité débute officiellement à 12h30, mais les opérations de mises à jour ne doivent pas débuter avant 13h30 pour permettre la sauvegarde de mi-journée.
+
+### Déploiement
+
+L'application est en mode web, elle ne nécessite pas de déploiement.
+
+### Planification
+
+.Déroulement
+[cols="1,3,2,^1"]
+|===
+| Jalon | Action | Acteur mobilisé | Indisponibilité
+
+| Planification | Préparation de la MV | Resp. applicatif, SI |
+| Communication | Alertes sur maj | SI |
+| Test | Déroulement de la campagne de test | testeur.euses |
+| Préparation | Sauvegardes | SI |
+| maintenance | Mise en maintenance de l'application | SI | X
+| Intervention | Montée de version technique | SI | X
+| Fin | Remise en production | SI, Resp. applicatif |
+|===
+
+### Plan de communication
+
+Les utilisateur.trices sont avertis selon le planning suivant :
+
+.Plan de communication
+[cols="1,1,2,3"]
+|===
+| Jalon | Destinataires | Média | Information
+
+| Préparation MAJ | Testeurs, resp. applicatif| Mail | Date et planification de la montée de version
+
+| Jour de test -5 | Utilisateurs finaux | Mail + bandeau sur l'appli | planification de l'indisponibilité pour MV
+
+| Jour de test -1 | testeurs | Mail | Confirmation du test
+
+| Plan de test finalisé | utilisateurs finaux | Mail + bandeau sur l'appli | Validation, indisponibilité confirmée pour le lendemain AM.
+
+| Début de l'indisponibilité | Tous.tes | Page de maintenance | Application en maintenance
+
+| Fin de l'indisponibilité | Tous.tes | Mail + Bandeau | Fin de l'indisponibilité, application mise à jour. Ajouter la doc des nouvelles fonctionnalités.
+|===
+
+### Retour arrière
+
+En cas d'échec de la montée de version, le retour arrière est décidé par le responsable d'application.

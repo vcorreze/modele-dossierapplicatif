@@ -1,0 +1,89 @@
+////
+guide-DMV-proc-fonctionnelle.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Guide pour la procédure fonctionnelle de montée de version
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+*Dernière modification* : {docdate}
+
+Lisez ce document avant de travailler sur le modèle correspondant.
+
+## Introduction
+
+Une procédure fonctionnelle de montée de version couvre les modalités et conditions d'une montée de version de l'outil.
+
+## Identifiez l'audience
+
+Une procédure de montée de version s'adresse à une audience technique. Les compétences requises doivent être décrites, ou au moins indiquez les compétences décrites dans le DEX.
+
+## Pourquoi une procédure de montée de version ?
+
+Cette procédure regroupe les actions et procédures qui doivent être envisagés et réalisés avant toute montée de version. Cela permet de rendre l'action homogène d'une version à l'autre, et de garantir un déroulement fluide de la montée de version.
+
+## Écrire la procédure
+
+### _Introduction_
+
+Cette section indique le but de la procédure
+
+### _Documents de référence_
+
+Dans cette section, reportez les documents de référence généraux relatifs à l'application.
+
+### _test de la nouvelle version_
+
+Les modalités de test d'une nouvelle version permettent en particulier de vérifier que les modules utilisés de l'application sont encore fonctionnels (non-régression).
+
+Ce plan de test doit avoir été défini dès l'installation, et pour assurer une couverture fonctionnelle complète il est nécessaire qu'il soit reproduit à chaque montée de version.
+
+Il faut penser à intégrer aux tests les nouvelles fonctionnalités souhaitées de la nouvelle version.
+
+Si des tests fonctionnels sont effectués de façon étendue, le plan de test peut être amené à devenir un document spécifique du dossier applicatif.
+
+Il est crucial que toute application dispose d'un environnement de test ou/et de pré-production sur lequel l'ensemble du plan de test pourra être déroulé sans impacter la production.
+
+#### _Recette_
+
+On indiquera précisément la (les) date(s) précises des recettes validation les nouvelles version installées.
+
+Cet historique ne doit pas remplacer un fichier changelog de développement. Il indique uniquement les versions ayant fait l'objet d'une recette fonctionnelle et qui sont validées en production, dans une logique d'homologation *métier* de la version installée.
+
+### _Modalités de montée de version_
+
+#### _Rôles et coordonnées des interlocuteurs_
+
+Les rôles liés à la montée de version sont généralement les mêmes qu'à l'installation. On peut renvoyer directement au paragraphe idoine du dossier d'installation, ou du dossier d'exploitation global.
+
+#### _Organisation de la montée de version_
+
+écrire les modalités organisationnelles de la montée de version. Celles-ci sont généralement une version réduite ou amendée de la *Procédure fonctionnelle d'installation*.
+
+#### _Déploiement_
+
+Décrire les modalités de déploiement de la nouvelle version. Il faut en particulier prendre en compte les temps de déploiement technique et les temps de formation des personnes.
+
+#### _Planification_
+
+Planifier précisément l'ensemble des phases de la mise en production. On intègre bien sûr les temps d'installation et de déploiement.
+
+On étudiera en particulier les temps d'indisponibilité des outils (ancien, nouveau) et les temps de communication aux utilisateur.rices. Ce planning permet aussi de confirmer les moments où sont mobilisés les interlocuteur.rices du projet.
+
+#### _Plan de communication_
+
+Donner plus précisément les jalons et les modalités concrètes d'information des différents acteurs sur l'avancement de la montée de version. Il faut en particulier porter attention aux messages qui informeront les utilisateur.rices finaux de la bascule vers la nouvelle version, et des modalités de support autour de l'application.
+
+#### _Retour arrière_
+
+Décrire les modalités organisationnelles d'un retour arrière. En particulier il faut définir à l'avance qui prends la décision, comment elle est communiquée et sous quel délai l'opération doit être réalisée.
+
+On décrira aussi si besoin les modalités de reprise des éléments éventuellement saisis dans la nouvelle version.

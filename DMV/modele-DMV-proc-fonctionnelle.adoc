@@ -1,0 +1,106 @@
+////
+DMV-proc-fonctionnelle.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Dossier de Montée de Version - procédure fonctionnelle
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+TIP: avant d'utiliser ce modèle, lisez le link:./guide-DMV-proc-fonctionnelle.adoc[Guide]
+
+*Dernière modification* : {docdate}
+
+*Date dernière revue globale* : _<Faire une revue globale du document à chaque fin de montée de version et mentionner la date ici>_
+
+*Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
+
+## Introduction
+
+La procédure fonctionnelle de montée de version indique les modalités et les conditions de validation d'une montée de version de l'outil.
+
+## Documents de référence
+
+TIP: renseignez le tableau avec les documents de référence globaux
+
+.Documents internes
+[cols="1,3,1"]
+|===
+| Nom | titre/URi du document | Version
+
+| | |
+
+|===
+
+## Test de la nouvelle version
+
+[TIP]
+====
+Décrire ici les modalités et le plan de test (exigences/scénarios de test) applicables
+
+précisez aussi les éléments sur les environnements de test/recette
+====
+
+### Recette
+
+TIP: indiquer les dates de recette *métier* de l'application avant montée de version. il ne s'agit pas d'un changelog mais d'une homologation
+
+.Montées de version
+[cols="1,^1,^2,3"]
+|===
+| Date | Version | Valideur | Commentaire
+
+| | | |
+|===
+
+## Modalités de montée de version
+
+### Rôles et coordonnées des interlocuteurs
+
+TIP: indiquez ou référencez les rôles et coordonnées des interlocuteurs
+
+### Organisation de la montée de version.
+
+TIP: Décrire ici les modalités organisationnelles de la montée de version.
+
+### Déploiement
+
+TIP: Décrire ici les modalités de déploiement de la nouvelle version.
+
+### Planification
+
+TIP: Planifier précisément l'ensemble des phases de la mise en production, avec les temps d'indisponibilité et de mobilisation des acteurs.
+
+.Déroulement
+[cols="1,3,2,^1"]
+|===
+| Jalon | Action | Acteur mobilisé | Indisponibilité
+
+| | | |
+
+|===
+
+### Plan de communication
+
+TIP: Donner jalons, modalités d'information et de support
+
+
+.Plan de communication
+[cols="1,1,2,3"]
+|===
+| Jalon | Destinataires | Média | Information
+
+| | |
+
+|===
+
+### Retour arrière
+
+TIP: Décrire ici les modalités organisationnelles d'un retour arrière
