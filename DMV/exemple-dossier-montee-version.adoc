@@ -6,7 +6,7 @@ SPDX-FileCopyrightText: 2023 Vincent Corrèze
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
-# Dossier de Montée de Version - procédure fonctionnelle
+# Dossier de Montée de Version
 :sectnumlevels: 4
 :toclevels: 4
 :sectnums: 4
@@ -22,7 +22,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 ## Introduction
 
-La procédure fonctionnelle de montée de version indique les modalités et les conditions de validation d'une montée de version de l'outil.
+La procédure fonctionnelle de montée de version indique les modalités et les conditions de validation d'une montée de version de l'outil Andromède.
 
 ## Documents de référence
 
@@ -66,6 +66,18 @@ La montée de version est planifiée au moins 15 jours à l'avance avec le respo
 Le déroulement de la campagne de test doit avoir été effectué la veille, et la matinée du jour de migration est consacrée aux corrections de bugs constatés lors des tests.
 
 L'indisponibilité débute officiellement à 12h30, mais les opérations de mises à jour ne doivent pas débuter avant 13h30 pour permettre la sauvegarde de mi-journée.
+
+#### Sauvegarde de la production
+
+On sauvegarde la production par réalisation des trois opérations suivantes :
+
+- [ ] dump de la base par `mysqldump andromede > yyyymmddhhmm-andromede.sql`
+- [ ] création d'une archive applicative par `tar -cvzf ~/yyyymmddhhmm-applic-andromede.tgz /var/www/andromede/`
+- [ ] Création d'un snapshot de la machine virtuelle VIRT-APP-ANDRO.
+
+#### Opérations de montée de version
+
+Les opérations de montée de version sont décrites dans la documentation andromede https://docs.readthedocs.io/fr/andromede/
 
 ### Déploiement
 
@@ -112,3 +124,11 @@ Les utilisateur.trices sont avertis selon le planning suivant :
 ### Retour arrière
 
 En cas d'échec de la montée de version, le retour arrière est décidé par le responsable d'application.
+
+La procédure technique de retour arrière est la suivante :
+
+- [ ] Se connecter à l'interface de gestion de la virtualisation https://mavirtualisation.mondomaine.fr
+- [ ] sélectionner la machine virtuelle de l'application
+- [ ] sélectionner l'action "restaurer une snapshot"
+- [ ] vérifier l'accès à l'application
+- [ ] faire contrôler par un.e utilisateur.rice le bon fonctionnement

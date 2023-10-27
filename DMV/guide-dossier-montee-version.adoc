@@ -6,15 +6,13 @@ SPDX-FileCopyrightText: 2023 Vincent Corrèze
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
-# Guide pour la procédure fonctionnelle de montée de version
+# Guide pour la procédure de montée de version
 :sectnumlevels: 4
 :toclevels: 4
 :sectnums: 4
 :toc: left
 :icons: font
 :toc-title: Sommaire
-
-*Dernière modification* : {docdate}
 
 Lisez ce document avant de travailler sur le modèle correspondant.
 
@@ -60,17 +58,41 @@ Cet historique ne doit pas remplacer un fichier changelog de développement. Il 
 
 ### _Modalités de montée de version_
 
+Les évolutions de version d'une application sont généralement effectuées selon trois modalités :
+
+- Mise à jour directement sur l'instance de production
+- Construction d'une instance parallèle et migration
+- livraison continue d'évolutions poussées en production, généralement par un outil dédié.
+
+Quelle que soit la modalité concernée, les éléments ci-dessous doivent être préparés pour assurer une montée de version.
+
 #### _Rôles et coordonnées des interlocuteurs_
 
-Les rôles liés à la montée de version sont généralement les mêmes qu'à l'installation. On peut renvoyer directement au paragraphe idoine du dossier d'installation, ou du dossier d'exploitation global.
+Les rôles liés à la montée de version sont généralement les mêmes qu'à l'installation. On peut renvoyer directement au paragraphe idoine du dossier d'installation, ou du dossier d'exploitation global. A défaut, ils doivent être précisés ici.
 
 #### _Organisation de la montée de version_
 
-écrire les modalités organisationnelles de la montée de version. Celles-ci sont généralement une version réduite ou amendée de la *Procédure fonctionnelle d'installation*.
+Les modalités de la montée de version sont généralement une version réduite ou amendée de la *Procédure d'installation*.
 
-#### _Déploiement_
+##### _Sauvegarde de la production_
 
-Décrire les modalités de déploiement de la nouvelle version. Il faut en particulier prendre en compte les temps de déploiement technique et les temps de formation des personnes.
+*Toute montée de version doit s'assurer de disposer d'une sauvegarde de l'environnement de production*.
+
+Il est généralement utile de disposer d'une sauvegarde dédiée *au moment du déclenchement* de l'opération technique, pour disposer des données les plus fraîches et de l'applicatif effectivement en production au moment de l'opération (_tout n'est pas toujours documenté..._)
+
+On sauvegardera si possible :
+
+- Les données, dans le format utilisé par l'applicatif (dump de base par exemple)
+- L'applicatif (répertoire de l'application, ou dump applicatif s'il est prévu)
+- L'environnement c'est à dire l'ensemble des couches de fonctionnement de l'application. Ceci correspond souvent à utiliser les possibilités de snapshot dans les environnement virtualisés ou de dump des conteneurs en environnement conteneurisé.
+
+##### _Opérations de montée de version_
+
+Décrire ici le déroulement technique de la montée de version. Ce déroulement peut renvoyer vers des documentations en ligne ou une documentation éditeur.
+
+##### _Déploiement_
+
+Décrire les modalités de déploiement de la nouvelle version. Il faut en particulier prendre en compte les modalités de déploiement technique et les temps de formation des personnes.
 
 #### _Planification_
 
@@ -84,6 +106,10 @@ Donner plus précisément les jalons et les modalités concrètes d'information 
 
 #### _Retour arrière_
 
-Décrire les modalités organisationnelles d'un retour arrière. En particulier il faut définir à l'avance qui prends la décision, comment elle est communiquée et sous quel délai l'opération doit être réalisée.
+Décrire les modalités organisationnelles et techniques d'un retour arrière. En particulier il faut définir à l'avance qui prends la décision, comment elle est communiquée et sous quel délai l'opération doit être réalisée.
+
+La procédure technique doit disposer des consignes explicites pour réaliser un retour à la version antérieure. Les différentes modalités de sauvegarde, les nombreuses utilitaires permettent généralement plusieurs manières de reconstruire l'environnement de production.
+
+Dans le stress d'une décision de retour arrière, les intervenant.es doivent disposer d'un déroulé clair et testé de la méthode choisie pour le retour arrière.
 
 On décrira aussi si besoin les modalités de reprise des éléments éventuellement saisis dans la nouvelle version.
