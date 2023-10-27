@@ -1,0 +1,46 @@
+////
+guide-ecriture.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Guide général d'écriture
+
+Voici quelques conseils d'écriture pour renseigner les modèles présents dans ce dossier.
+
+## Language et ton
+
+* *Restez bref*, le lecteur doit pouvoir parcourir rapidement les documents pour atteindre la partie qu'il recherche.
+* positionnez toujours une *table des matières*, pour les mêmes raisons que ci-dessus.
+* *Ne pas se répéter* (Principe link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY]). Si un paragraphe fait référence à une spécification ou à un autre paragraphe, utilisez un lien. Si le domaine concerné respecte une politique globale de votre organisation, orientez le lecteur vers cette politique.
+* Utilisez un *language cohérent*, avec le même ton dans l'ensemble des documentations
+* Décrivez les choses aussi clairement et précisément que possible.
+* Vérifiez l'orthographe et la grammaire avec les outils à votre disposition (p. ex link:https://grammalecte.net/[grammalecte])
+* évitez le jargon et le language parlé qui rendent difficile la lecture des documents
+évitez les acronymes si vous n'avez pas utilisé la forme complète plus tôt dans le document. Les acronymes doivent être intégrés au link:./glossaire.adoc[glossaire]
+* évitez d'indiquer des opinions personnelles. Cela perturbe la capacité du lecteur à tirer ses propres conclusions
+
+## Structure des documents
+
+* Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide.
+* Vérifiez ou créez votre plan avant de commencer à écrire
+* n'hésitez pas à créer plusieurs documents si cela vous semble utile
+* Ajoutez tous les liens que vous présentez dans un document dans une section "*voir aussi*" du document. Cela facilite l'usage et réduit la charge cognitive du lecteur.
+
+## Titres et noms de fichier
+
+* Utilisez un titre qui indique clairement le contenu du document
+* Utilisez des titres unique dans votre espace de documentation
+* utilisez le titre comme nom de fichier. Il est difficile d'identifier le fichier si son nom est différent du titre
+* Utilisez des mots uniques dans vos titres pour faciliter les recherches
+
+## Ressources
+
+Ces conseils sont issus du link:https://github.com/bflorat/modele-da/[modèle de dossier d'architecture] de Bertrand Florat, et du projet link:https://thegooddocsproject.dev[The good docs project].
+
+## Voir aussi
+
+* link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY], Don't Repeat Yourself
+* link:https://grammalecte.net/[grammalecte], correcteur orthographique, grammatical et typographique

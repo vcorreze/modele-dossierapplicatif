@@ -1,0 +1,25 @@
+////
+sources.adoc
+
+SPDX-FileCopyrightText: 2023 Vincent Corrèze
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+////
+
+# Bibliographie sommaire
+
+## Sources majeures
+
+* Modèle d'architecture de Bertrand Florat : link:https://github.com/bflorat/modele-da/[modele-da]
+* Template de documentation du projet The Good Docs : link:https://thegooddocsproject.dev/[theGoodDocs]
+
+## Référentiels
+
+* Référentiel ITIL : link:https://www.axelos.com/certifications/itil-service-management[ITIL v4]
+* Framework COBIT : link:https://www.isaca.org/resources/cobit[COBIT]
+
+## Exemples et inspirations
+
+* Documentation d'exploitation du logiciel VITAM : link:http://www.programmevitam.fr/ressources/DocCourante/html/exploitation/introduction.html#but-de-cette-documentation_[DEX Vitam]
+* Méthodologie Hermes de la confédération suisse, partie résultats : link:https://www.hermes.admin.ch/fr/gestion-du-projet/comprendre/resultats/manuel-d-exploitation.html[HERMES Online]
+* Dossier d'exploitation du logiciel TumoroteK : link:https://tumorotek.github.io/TumoroteK/TumoroteK-DossierExploitation.pdf[DEX TumoroteK]

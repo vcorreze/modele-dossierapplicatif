@@ -6,11 +6,28 @@ SPDX-FileCopyrightText: 2023 Vincent Corrèze
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
 
-# Documentation technique applicative
+# README - Dossier Applicatif
+
+:sectnumlevels: 4
+:toclevels: 4
+:sectnums: 4
+:toc: left
+:icons: font
+:toc-title: Sommaire
+
+## Description du projet
 
 Ce modèle recense les principales documentations techniques nécessaires pour assurer le fonctionnement courant d'une application informatique au sein d'un système d'informations.
 
 Il s'inspire fortement du link:https://github.com/bflorat/modele-da[modèle de dossier d'architecture] de Bertrand Florat qu'il complète et étend.
+
+## Pour qui ?
+
+Ce projet est destiné aux équipes d'exploitation informatique, pour qu'elles puissent documenter précisément tous les éléments de fonctionnement courant de leurs applicatifs de production.
+
+## Prérequis
+
+Ces modèles nécessitent une connaissance des contraintes de l'exploitation courante des applicatifs de production.
 
 ## Principes du modèle
 Le dossier d'architecture et ses 5 vues (développement, dimensionnement, applicative, sécurité, infrastructure) a vocation à documenter la phase de conception d'une application. Il constitue l'un des modules de ce dossier, permettant aux rôles concernés (ops, intégrateurs, RSSI) de retrouver le détail fin de la conception de l'application. Dans la chaîne de valeur des services  ITIL il correspond à la phase de "conception & transition".
@@ -19,7 +36,7 @@ Les équipes qui assurent le fonctionnement courant des applications ("Ops", "ex
 
 Pour COBIT 2019, ces documentations font partie des domaines BAI (Bâtir, acquérir, implémenter) et DSS (Délivrer, Servir et Soutenir)
 
-Ces informations sont réparties dans 4 dossiers :
+Ces informations sont réparties dans plusieurs dossiers :
 
 .Dossiers du modèle
 [cols="1a,3a,1a,1a"]
@@ -36,36 +53,41 @@ Ces informations sont réparties dans 4 dossiers :
 
 |===
 
-Chaque document correspond à son besoin propre, et doit pouvoir être consulté sans être contraint de se référer à d'autres document. Les liens vers d'autres documentation (dossier d'architecture en particulier, ou documentation en ligne) ne doivent être présents que pour servir de référence ou diagnostiquer un point précis.
-
-Chacune des documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
-
 Les modalités d'acquisition des solutions techniques sont telles que généralement, l'ensemble des éléments de documentation présentés ici ne sont pas disponibles. Par exemple, lors de l'implémentation d'un outil logiciel d'éditeur le détail de la vue architecture applicative est rarement fourni, et le dossier technique de montée de version est réservé à l'éditeur.
 
 Il est donc fréquent que le dossier de documentation applicative soit partiel ou incomplet. Cependant nous recommandons que *toute application en production dispose _a minima_ d'un dossier d'exploitation*.
 
 Le dossier comprends également un exemple de glossaire, à l'image de celui du dossier d'architecture. Il est entendu qu'un dossier complet ne doit contenir qu'un seul glossaire.
 
-## Utilisation du modèle
+## Instructions pour utiliser le modèle
 
-### Présentation générale
-* ce modèle est au format https://asciidoc.org[asciidoc]. De la même façon que pour le dossier d'architecture, nous préconisons un format *textuel et lisible* (type markdown), dont le suivi de version peut être facilement implémenté dans un outil dédié ce qui permet de maintenir la documentation.
-* Les modèles proposés sont évidemment perfectibles, et toute proposition d'amélioration est la bienvenue.
-* L'ensemble est volontairement riche en *explications et exemples* pour permettre une meilleure compréhension des items présentés.
-* Des link:./modeles-vierges[modèles vierges] sont fournis.
+Les modèles sont rédigés au format https://asciidoc.org[asciidoc]. De la même façon que pour le dossier d'architecture, nous préconisons un format *textuel et lisible* (type markdown), dont le suivi de version peut être facilement implémenté dans un outil dédié ce qui permet de maintenir la documentation.
 
-### Conseils pour la rédaction
-* *Restez bref*, le lecteur doit pouvoir parcourir rapidement les documents pour atteindre la partie qu'il recherche.
-* positionnez toujours une *table des matières*, pour les mêmes raisons que ci-dessus.
-* *Ne pas se répéter* (Principe link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY]). Si un paragraphe fait référence à une spécification ou à un autre paragraphe, utilisez un lien. Si le domaine concerné respecte une politique globale de votre organisation, orientez le lecteur vers cette politique.
-* Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide.
-* Éventuellement, il est possible de séparer le dossier d'architecture en plusieurs document par chapitre pour en faciliter la lecture.
+Les modèles proposés sont rédigés selon les pratiques du projet link:https://thegooddocsproject.dev[The good docs project].
+
+Chaque modèle contient :
+
+- Un fichier `guide-xxx.adoc`, qui fournit les explications détaillées concernant chaque chapitre du modèle
+- un fichier `modele-xxx.adoc`, qui constitue le modèle brut avec une description sommaire de chaque partie
+- un fichier `exemple-xxx.adoc` qui décrit un faux projet à titre d'exemple.
+
+Chaque document correspond à son besoin propre, et doit pouvoir être consulté sans être contraint de se référer à d'autres document. Les liens vers d'autres documentation (dossier d'architecture en particulier, ou documentation en ligne) ne doivent être présents que pour servir de référence ou diagnostiquer un point précis.
+
+Chacune des documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
-* les *règles d'architecture de référence* (communes à toutes les applications);
+
+* les *règles d'exploitation de référence* (communes à toutes les applications);
 * les *documentations utilisateurs* : le dossier applicatif concerne l'exploitation (maintien en conditions opérationnelles et de sécurité) de l'application, il ne recense pas de documents destinés aux utilisateurs fonctionnels.
 
-## Licence
+## Contribuer
+
+Les modèles proposés sont évidemment perfectibles, et toute proposition d'amélioration est la bienvenue.
+
+Les contributions sont attendues sous la forme de tickets où de push request github.
+
+## Conditions d'utilisation
+
 * Copyright (c) 2023 Vincent Corrèze et contributeurs
 * Ce modèle est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0] : Creative Commons Attribution - Partage à l'identique V4.0
 * Le modèle de dossier d'architecture utilisé est (c) Bertrand Florat et contributeurs, il est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0].
@@ -76,17 +98,5 @@ Le dossier comprends également un exemple de glossaire, à l'image de celui du 
 * Un dossier issu de ces modèles n'a pas à appliquer ces licences. Il est cependant recommandé d'y inclure un lien vers link:https://github.com/vcorreze/modele-dossierapplicatif[] et/ou vers link:https://github.com/bflorat/modele-da[].
 
 ## Remerciements
+
 * Bertrand Florat, pour l'inspiration et le modèle de dossier d'architecture
-
-## Bibliographie sommaire
-
-### Référentiels
-
-* Référentiel ITIL : link:https://www.axelos.com/certifications/itil-service-management[ITIL v4]
-* Framework COBIT : link:https://www.isaca.org/resources/cobit[COBIT]
-
-### Exemples et inspirations
-
-* Documentation d'exploitation du logiciel VITAM : link:http://www.programmevitam.fr/ressources/DocCourante/html/exploitation/introduction.html#but-de-cette-documentation_[DEX Vitam]
-* Méthodologie Hermes de la confédération suisse, partie résultats : link:https://www.hermes.admin.ch/fr/gestion-du-projet/comprendre/resultats/manuel-d-exploitation.html[HERMES Online]
-* Dossier d'exploitation du logiciel TumoroteK : link:https://tumorotek.github.io/TumoroteK/TumoroteK-DossierExploitation.pdf[DEX TumoroteK]
