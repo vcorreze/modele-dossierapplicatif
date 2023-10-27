@@ -25,7 +25,7 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 |=======================================================================
 |Terme |Signification |Commentaire
 
-|  | |
+|SLA|Service Level Agreement|Accord de niveau de service. Il s'agit de l'engagement réciproque métier-si sur le niveau de qualité de fonctionnement de l'application.
 
 
 |=======================================================================
