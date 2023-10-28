@@ -65,10 +65,10 @@ La mise en production a été réalisée en séance le 27/10.
 
 L'environnement technique est confirmé comme suit (cf. dossier d'architecture):
 
-* Dimensionnement de la machine : ok
-* versions des composants : ok
-* gestion du démarrage : ok
-* gestion de la sauvegarde : ok
+* [x] Dimensionnement de la machine : 50 Go HDD/2vCPU/8Go RAM
+* [x] versions des composants
+* [x] gestion du démarrage : ok via systemd
+* [x] gestion de la sauvegarde : ok via plan de sauvegarde
 
 ### Plan de test fonctionnel
 
@@ -78,6 +78,6 @@ Le plan de test est référencé dans l'outil https://squashtm.monentreprise.net
 
 La recette fonctionnelle a été prononcée comme suit:
 
-* Date de recette : 28/10/2023
-* Valideurs : A. Jeanjean, responsable applicative
+* Date de recette : 28/10/2021
+* Valideurs : Julie Julejule, responsable applicative
 * Réserves : aucune.

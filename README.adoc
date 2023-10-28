@@ -75,7 +75,7 @@ Chaque document correspond à son besoin propre, et doit pouvoir être consulté
 
 Chacune des documentations est autoporteuse, de façon que l'intervenant.e puisse n'ouvrir que la documentation concernée. Des liens pertinents permettent de renvoyer d'un document à l'autre en cas de besoin.
 
-Les recommandations d'écriture sont regroupées dans le link:./guide-ecriture.adoc[Guide d'écriture].
+Les recommandations d'écriture sont regroupées dans le link:./guide-ecriture.adoc[guide d'écriture].
 
 ### Que ne trouve-t-on *PAS* dans ce document ?
 

@@ -49,8 +49,8 @@ Les recettes validées sont les suivantes :
 |===
 | Date | Version | Valideur | Commentaire
 
-| 20221102 | 1.3.5 | Resp. métier | bug #55438 restant.
-| 20230503 | 1.4.0 | Resp. métier | ajout du module impression pdf.
+| 20221102 | 1.3.5 | Julie Julejule | bug #55438 restant.
+| 20230503 | 1.4.0 | Julie Julejule | ajout du module impression pdf.
 |===
 
 ## Modalités de montée de version
