@@ -14,11 +14,13 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 :icons: font
 :toc-title: Sommaire
 
+NOTE: Lisez ce document avant de travailler sur le modèle correspondant.
+
 ## Introduction
 
 Le dossier d'installation indique les modalités et conditions de mise en production d'un logiciel.
 
-## Identifiez l'audience
+## Audience
 
 La procédure d'installation s'adresse nécessairement à une audience technique. Les compétences requises doivent être explicitées ici, ou au moins référencées dans le link:../DEX/guide-dossier-exploitation.adoc[dossier d'exploitation].
 

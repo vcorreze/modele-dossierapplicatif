@@ -14,13 +14,13 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 :icons: font
 :toc-title: Sommaire
 
-Lisez ce document avant de travailler sur le modèle correspondant.
+NOTE: Lisez ce document avant de travailler sur le modèle correspondant.
 
 ## Introduction
 
 Une procédure fonctionnelle de montée de version couvre les modalités et conditions d'une montée de version de l'outil.
 
-## Identifiez l'audience
+## Audience
 
 Une procédure de montée de version s'adresse à une audience technique. Les compétences requises doivent être décrites, ou au moins indiquez les compétences décrites dans le DEX.
 
