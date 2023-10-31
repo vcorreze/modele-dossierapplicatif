@@ -26,11 +26,11 @@ La procédure d'installation s'adresse nécessairement à une audience technique
 
 ## Pourquoi un dossier d'installation
 
-Ce dossier *n'est pas* un guide pour installer de nouveau le logiciel (c'est une documentation du fournisseur de l'outil, qu'il s'agisse d'équipe de développement de l'entreprise ou externalisées, ou d'un éditeur, ou d'un groupe collaboratif éditeur de logiciel).
-
-L'organisation et le pilotage de la mise en production de l'outil relèvent de la gestion du projet de mise en oeuvre, et ne sont généralement pas réalisées par les équipes de production. La co-construction de ce dossier, bilan de l'installation, permet d'assurer le transfert de compétence entre les 2 équipes.
+Ce dossier *n'est pas* un guide pour installer de nouveau le logiciel (c'est le rôle d'une documentation du fournisseur de l'outil, qu'il s'agisse d'équipe de développement de l'entreprise ou externalisées, ou d'un éditeur, ou d'un groupe collaboratif éditeur de logiciel).
 
 Ce dossier regroupe les actions et procédures qui *ont été* réalisées lors de l'installation du logiciel. Il a vocation à enregistrer les choix et opérations réalisées à l'installation et à permettre le contrôle du respect de la configuration technique de l'outil.
+
+L'organisation et le pilotage de la mise en production de l'outil relèvent de la gestion du projet de mise en oeuvre, et ne sont généralement pas réalisées par les équipes de production. La co-construction de ce dossier, bilan de l'installation, permet d'assurer le transfert de compétence entre les 2 équipes.
 
 ## Écrire la procédure
 
