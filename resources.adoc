@@ -17,6 +17,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 * Référentiel ITIL : link:https://www.axelos.com/certifications/itil-service-management[ITIL v4]
 * Framework COBIT : link:https://www.isaca.org/resources/cobit[COBIT]
+* Méthodologie d'analyse sécurité EBIOS RM : link:https://cyber.gouv.fr/la-methode-ebios-risk-manager[EBIOS RM]
 
 ## Exemples et inspirations
 

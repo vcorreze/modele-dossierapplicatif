@@ -25,6 +25,8 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 |=======================================================================
 |Terme |Signification |Commentaire
 
+|RGPD| _Règlement Général sur la Protection des Données_ | Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 sur la protection des données personnelles
+
 |SLA|_Service Level Agreement_|Accord de niveau de service. Il s'agit de l'engagement réciproque métier-si sur le niveau de qualité de fonctionnement de l'application.
 
 
