@@ -1,7 +1,7 @@
 ////
 DMV-proc-fonctionnelle.adoc
 
-SPDX-FileCopyrightText: 2023 Vincent Corrèze
+SPDX-FileCopyrightText: 2023-2024 Vincent Corrèze
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
@@ -36,22 +36,9 @@ La procédure fonctionnelle de montée de version indique les modalités et les 
 | DA | link:../README.adoc[Dossier applicatif] |
 |===
 
-## Test de la nouvelle version
+## Plan de test de la nouvelle version
 
 Le plan de test est décrit dans le répertoire `04-Plan de test` du dossier d'exploitation A423.
-
-### Recette
-
-Les recettes validées sont les suivantes :
-
-.Montées de version
-[cols="1,^1,^2,3"]
-|===
-| Date | Version | Valideur | Commentaire
-
-| 20221102 | 1.3.5 | Julie Julejule | bug #55438 restant.
-| 20230503 | 1.4.0 | Julie Julejule | ajout du module impression pdf.
-|===
 
 ## Modalités de montée de version
 
@@ -132,3 +119,16 @@ La procédure technique de retour arrière est la suivante :
 - [ ] sélectionner l'action "restaurer une snapshot"
 - [ ] vérifier l'accès à l'application
 - [ ] faire contrôler par un.e utilisateur.rice le bon fonctionnement
+
+### Recette
+
+Les recettes validées sont les suivantes :
+
+.Montées de version
+[cols="1,^1,^2,3"]
+|===
+| Date | Version | Valideur | Commentaire
+
+| 20221102 | 1.3.5 | Julie Julejule | bug #55438 restant.
+| 20230503 | 1.4.0 | Julie Julejule | ajout du module impression pdf.
+|===

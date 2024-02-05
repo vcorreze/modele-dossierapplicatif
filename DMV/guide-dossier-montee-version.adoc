@@ -1,7 +1,7 @@
 ////
 guide-DMV-proc-fonctionnelle.adoc
 
-SPDX-FileCopyrightText: 2023 Vincent Corrèze
+SPDX-FileCopyrightText: 2023-2024 Vincent Corrèze
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
@@ -22,27 +22,31 @@ Une procédure fonctionnelle de montée de version couvre les modalités et cond
 
 ## Audience
 
-Une procédure de montée de version s'adresse à une audience technique. Les compétences requises doivent être décrites, ou au moins indiquez les compétences décrites dans le DEX.
+L'audience cible d'un guide de montée de version est l'équipe d'exploitation système qui aura à assurer ces opérations. Le document s'adresse donc à une audience technique, connaissant l'environnement et le fonctionnement basique de l'environnement d'exploitation. Au besoin, les compétences techniques nécessaires sont décrites dans le DMV, ou dans le DEX.
 
 ## Pourquoi une procédure de montée de version ?
 
-Cette procédure regroupe les actions et procédures qui doivent être envisagés et réalisés avant toute montée de version. Cela permet de rendre l'action homogène d'une version à l'autre, et de garantir un déroulement fluide de la montée de version.
+Cette procédure regroupe les actions et procédures qui doivent être envisagés et réalisés lors toute montée de version. Elle couvre à la fois la procédure fonctionnelle (quels utilisateurs, planification, préparation, recette, validation) et la procédure technique (les opérations concrètes de montée de version). Cela permet de rendre l'action homogène d'une version à l'autre, et de garantir un déroulement fluide de la montée de version.
 
 ## Écrire la procédure
 
+On indiquera toujours en début de document les dates de dernière modification, de dernière revue globale et le statut du document. Cela permet de vérifier l'actualité et la validité de la procédure.
+
 ### _Introduction_
 
-Cette section indique le but de la procédure
+Cette section indique le but de la procédure, et le nom du service concerné.
 
 ### _Documents de référence_
 
 Dans cette section, reportez les documents de référence généraux relatifs à l'application.
 
-### _test de la nouvelle version_
+### _Plan de test de la nouvelle version_
 
-Les modalités de test d'une nouvelle version permettent en particulier de vérifier que les modules utilisés de l'application sont encore fonctionnels (non-régression).
+Les modalités de test d'une nouvelle version permettent en particulier de vérifier que les modules et les fonctions métier de l'application sont encore fonctionnels (non-régression).
 
 Ce plan de test doit avoir été défini dès l'installation, et pour assurer une couverture fonctionnelle complète il est nécessaire qu'il soit reproduit à chaque montée de version.
+
+Il est pertinent que le plan de test soit rédigé sous la forme d'*exigences* et de *scénarios de test*. Cette formulation permet de garantir la répétabilité des tests.
 
 Il faut penser à intégrer aux tests les nouvelles fonctionnalités souhaitées de la nouvelle version.
 
@@ -50,19 +54,13 @@ Si des tests fonctionnels sont effectués de façon étendue, le plan de test pe
 
 Il est crucial que toute application dispose d'un environnement de test ou/et de pré-production sur lequel l'ensemble du plan de test pourra être déroulé sans impacter la production.
 
-#### _Recette_
-
-On indiquera précisément la (les) date(s) précises des recettes validation les nouvelles version installées.
-
-Cet historique ne doit pas remplacer un fichier changelog de développement. Il indique uniquement les versions ayant fait l'objet d'une recette fonctionnelle et qui sont validées en production, dans une logique d'homologation *métier* de la version installée.
-
 ### _Modalités de montée de version_
 
 Les évolutions de version d'une application sont généralement effectuées selon trois modalités :
 
 - Mise à jour directement sur l'instance de production
 - Construction d'une instance parallèle et migration
-- livraison continue d'évolutions poussées en production, généralement par un outil dédié.
+- livraison continue d'évolutions poussées en production, généralement par un outil dédié (DevOps).
 
 Quelle que soit la modalité concernée, les éléments ci-dessous doivent être préparés pour assurer une montée de version.
 
@@ -82,9 +80,9 @@ Il est généralement utile de disposer d'une sauvegarde dédiée *au moment du 
 
 On sauvegardera si possible :
 
-- Les données, dans le format utilisé par l'applicatif (dump de base par exemple)
-- L'applicatif (répertoire de l'application, ou dump applicatif s'il est prévu)
-- L'environnement c'est à dire l'ensemble des couches de fonctionnement de l'application. Ceci correspond souvent à utiliser les possibilités de snapshot dans les environnement virtualisés ou de dump des conteneurs en environnement conteneurisé.
+- Les *données*, dans le format utilisé par l'applicatif (_dump_ de base par exemple)
+- L'*applicatif* (répertoire de l'application, ou _dump_ applicatif s'il est prévu)
+- L'*environnement* c'est à dire l'ensemble des couches de fonctionnement de l'application. Ceci correspond souvent à utiliser les possibilités de snapshot dans les environnement virtualisés ou de _dump_ des conteneurs en environnement conteneurisé.
 
 ##### _Opérations de montée de version_
 
@@ -113,3 +111,11 @@ La procédure technique doit disposer des consignes explicites pour réaliser un
 Dans le stress d'une décision de retour arrière, les intervenant.es doivent disposer d'un déroulé clair et testé de la méthode choisie pour le retour arrière.
 
 On décrira aussi si besoin les modalités de reprise des éléments éventuellement saisis dans la nouvelle version.
+
+#### _Recette_
+
+Ce paragraphe sert à historiser les montées de versions réalisées sur l'application.
+
+Cet historique ne doit pas remplacer un fichier changelog de développement. Il indique uniquement les versions ayant fait l'objet d'une recette fonctionnelle et qui sont validées en production, dans une logique d'homologation *métier* de la version installée.
+
+On indiquera la (les) date(s) précises des recettes validation les nouvelles version installées.

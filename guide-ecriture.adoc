@@ -16,7 +16,7 @@ Voici quelques conseils d'écriture pour renseigner les modèles présents dans 
 * positionnez toujours une *table des matières*, pour les mêmes raisons que ci-dessus.
 * *Ne pas se répéter* (Principe link:https://fr.wikipedia.org/wiki/Ne_vous_r%C3%A9p%C3%A9tez_pas[DRY]). Si un paragraphe fait référence à une spécification ou à un autre paragraphe, utilisez un lien. Si le domaine concerné respecte une politique globale de votre organisation, orientez le lecteur vers cette politique.
 * Utilisez un *language cohérent*, avec le même ton dans l'ensemble des documentations
-* Décrivez les choses aussi clairement et précisément que possible.
+* Décrivez les choses aussi clairement et précisément que possible
 * Vérifiez l'orthographe et la grammaire avec les outils à votre disposition (p. ex link:https://grammalecte.net/[grammalecte])
 * évitez le jargon et le language parlé qui rendent difficile la lecture des documents
 évitez les acronymes si vous n'avez pas utilisé la forme complète plus tôt dans le document. Les acronymes doivent être intégrés au link:./glossaire.adoc[glossaire]

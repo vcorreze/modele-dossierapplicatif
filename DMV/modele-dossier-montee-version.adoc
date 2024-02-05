@@ -1,7 +1,7 @@
 ////
 DMV-proc-fonctionnelle.adoc
 
-SPDX-FileCopyrightText: 2023 Vincent Corrèze
+SPDX-FileCopyrightText: 2023-2024 Vincent Corrèze
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
@@ -39,7 +39,7 @@ TIP: renseignez le tableau avec les documents de référence globaux
 
 |===
 
-## Test de la nouvelle version
+## Plan de test de la nouvelle version
 
 [TIP]
 ====
@@ -47,18 +47,6 @@ Décrire ici les modalités et le plan de test (exigences/scénarios de test) ap
 
 précisez aussi les éléments sur les environnements de test/recette
 ====
-
-### Recette
-
-TIP: indiquer les dates de recette *métier* de l'application avant montée de version. il ne s'agit pas d'un changelog mais d'une homologation
-
-.Montées de version
-[cols="1,^1,^2,3"]
-|===
-| Date | Version | Valideur | Commentaire
-
-| | | |
-|===
 
 ## Modalités de montée de version
 
@@ -111,4 +99,16 @@ TIP: Donner jalons, modalités d'information et de support
 
 ### Retour arrière
 
-TIP: Décrire ici les modalités d'un retour arrière, à la fois dans l'organisation et techniquement. Prendre en compte la reprise des données si besoin.
+TIP: Décrire ici les modalités techniques et organisationnelles d'un retour arrière, à la fois dans l'organisation et techniquement. Prendre en compte la reprise des données si besoin.
+
+### Recette
+
+TIP: indiquer les dates de recette *métier* de l'application avant montée de version. il ne s'agit pas d'un changelog mais d'une homologation.
+
+.Montées de version
+[cols="1,^1,^2,3"]
+|===
+| Date | Version | Valideur | Commentaire
+
+| | | |
+|===
