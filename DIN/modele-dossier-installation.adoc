@@ -53,7 +53,7 @@ TIP: Indiquez les modalités organisationnelles mises en oeuvre.
 
 ### Déroulement technique de l'installation
 
-TIP: indiquez le déroulement technique, et les choix opérés dans l'installation
+TIP: indiquez le déroulement technique, et les choix opérés dans l'installation.
 
 ### Transfert de données
 
@@ -61,25 +61,25 @@ TIP: précisez si des données ont été intégrées, si l'intégration a géné
 
 ### Modalités d'accès et profils de référence
 
-TIP: indiquez les principaux profils et les modalités d'accès de l'administrateur
+TIP: indiquez les principaux profils et les modalités d'accès de l'administrateur.
 
 #### Planification de l'installation
 
-TIP: décrire la planification choisie pour l'installation
+TIP: décrire la planification choisie pour l'installation.
 
 ## Vérification d'aptitude au bon fonctionnement
 
 ### Contrôle de conformité technique
 
-TIP: indiquez la checklist de conformité technique
+TIP: indiquez la checklist de conformité technique.
 
 ### Plan de test fonctionnel
 
-TIP: référencer ici le plan de test fonctionnel, et ses principaux modules
+TIP: référencer ici le plan de test fonctionnel, et ses principaux modules.
 
 ### Recette
 
-TIP: indiquez la date, les personnes et les éventuelles réserves émises à la recette
+TIP: indiquez la date, les personnes et les éventuelles réserves émises à la recette.
 
 * Date de recette : _<indiquez la date>_
 * Valideurs : _<Personnes ayant validé la recette>_

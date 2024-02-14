@@ -22,7 +22,7 @@ Une procédure fonctionnelle de montée de version couvre les modalités et cond
 
 ## Audience
 
-L'audience cible d'un guide de montée de version est l'équipe d'exploitation système qui aura à assurer ces opérations. Le document s'adresse donc à une audience technique, connaissant l'environnement et le fonctionnement basique de l'environnement d'exploitation. Au besoin, les compétences techniques nécessaires sont décrites dans le DMV, ou dans le DEX.
+L'audience cible d'un dossier de montée de version est l'équipe d'exploitation système qui aura à assurer ces opérations. Le document s'adresse donc à une audience technique, connaissant l'environnement et le fonctionnement basique de l'environnement d'exploitation. Au besoin, les compétences techniques nécessaires sont décrites dans le DMV, ou référencées dans le link:../DEX/guide-dossier-exploitation.adoc[dossier d'exploitation].
 
 ## Pourquoi une procédure de montée de version ?
 

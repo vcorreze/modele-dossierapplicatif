@@ -14,11 +14,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 :icons: font
 :toc-title: Sommaire
 
-*Dernière modification* : {docdate}
+*Dernière modification* : _30 octobre 2021_
 
-*Date d'installation* : _<Faire une revue globale du document en fin d'installation et mentionner la date ici>_
+*Date d'installation* : _25 octobre 2021_
 
-*Statut du document* : _<Donner ici le statut, par exemple 'DRAFT', 'FINALISE', etc.>_
+*Statut du document* : _validé_
 
 ## Documents de référence
 
