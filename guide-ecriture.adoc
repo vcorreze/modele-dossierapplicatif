@@ -24,7 +24,7 @@ Voici quelques conseils d'écriture pour renseigner les modèles présents dans 
 
 ## Structure des documents
 
-* Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide.
+* Les modèles sont volontairement très complet, il est donc normal que certaines parties ne soient pas applicables dans votre organisation ou pour l'application choisie. Indiquez de préférence `N/A` dans les paragraphes concernés, plutôt que de les laisser vide. Si trop de paragraphes sont non exploités, il peut devenir pertinent de réduire le document aux seuls chapitre non renseignés - YMMV.
 * Vérifiez ou créez votre plan avant de commencer à écrire
 * n'hésitez pas à créer plusieurs documents si cela vous semble utile
 * Ajoutez tous les liens que vous présentez dans un document dans une section "*voir aussi*" du document. Cela facilite l'usage et réduit la charge cognitive du lecteur.

@@ -71,6 +71,16 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 
 |=======================================================================
 
+## Termes d'argot ou expression consacrée
+
+[cols="1s,4,4"]
+|=======================================================================
+|Terme |Signification | Commentaire
+
+|YMMV|_Your Mileage May Vary_| Votre kilométrage peut varier. Signifie que ce choix n'est pas une exigence, que votre situation peut varier selon la situation ou l'expérience. Cf. link:https://fr.wiktionary.org/wiki/your_mileage_may_vary[Wiktionnaire].
+
+|=======================================================================
+
 ## Sources
 
 * Certains termes proviennent du link:http://www.programmevitam.fr/ressources/DocCourante/html/exploitation/introduction.html#but-de-cette-documentation[Glossaire du logiciel VITAM], §2.3 données extraites le 04 septembre 2023
