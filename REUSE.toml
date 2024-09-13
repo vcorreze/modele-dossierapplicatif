@@ -1,0 +1,16 @@
+## SPDX-FileCopyrightText: 2024 Vincent Corrèze
+##
+## SPDX-License-Identifier: CC0-1.0
+
+# REUSE specification file for dossier applicatif
+
+version = 1
+SPDX-PackageName = "modele-dossierapplicatif"
+SPDX-PackageSupplier = "Vincent Corrèze <8751331+vcorreze@users.noreply.github.com>"
+SPDX-PackageDownloadLocation = "https://github.com/vcorreze/modele-dossierapplicatif"
+
+[[annotations]]
+path = "DA/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Copyright (c) 2017-2024 Bertrand Florat et contributeurs"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
