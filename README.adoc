@@ -69,7 +69,7 @@ Chaque modèle contient :
 
 - Un fichier `guide-xxx.adoc`, qui fournit les explications détaillées concernant chaque chapitre du modèle
 - un fichier `modele-xxx.adoc`, qui constitue le modèle brut avec une description sommaire de chaque partie
-- un fichier `exemple-xxx.adoc` qui décrit un faux projet à titre d'exemple.
+- un fichier `exemple-xxx.adoc` qui décrit un faux projet à titre d'exemple
 
 Chaque document correspond à son besoin propre, et doit pouvoir être consulté sans être contraint de se référer à d'autres document. Les liens vers d'autres documentation (dossier d'architecture en particulier, ou documentation en ligne) ne doivent être présents que pour servir de référence ou diagnostiquer un point précis.
 

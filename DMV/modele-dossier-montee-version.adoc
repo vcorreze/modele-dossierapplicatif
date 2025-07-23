@@ -14,7 +14,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 :icons: font
 :toc-title: Sommaire
 
-TIP: avant d'utiliser ce modèle, lisez le link:./guide-DMV-proc-fonctionnelle.adoc[Guide]
+TIP: avant d'utiliser ce modèle, lisez le link:./guide-dossier-montee-version.adoc[Guide]
 
 *Dernière modification* : {docdate}
 
