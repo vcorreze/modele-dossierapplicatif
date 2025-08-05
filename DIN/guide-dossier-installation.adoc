@@ -22,7 +22,7 @@ Le dossier d'installation indique les modalités et conditions de mise en produc
 
 ## Audience
 
-L'audience cible d'un dossier d'installation est l'équipe d'exploitation système qui aura à connaître les paramètres utilisés à l'installation. Le document s'adresse donc à une audience technique, connaissant l'environnement et le fonctionnement basique de l'environnement d'exploitation. Au besoin, les compétences techniques nécessaires sont décrites dans le DMV, ou dans le DEX. ou au moins référencées dans le link:../DEX/guide-dossier-exploitation.adoc[dossier d'exploitation].
+L'audience cible d'un dossier d'installation est l'équipe d'exploitation système qui aura à connaître les paramètres utilisés à l'installation. Le document s'adresse donc à une audience technique, connaissant l'environnement et le fonctionnement basique de l'environnement d'exploitation. Au besoin, les compétences techniques nécessaires sont décrites dans le DMV, ou au moins référencées dans le link:../DEX/guide-dossier-exploitation.adoc[dossier d'exploitation].
 
 ## Pourquoi un dossier d'installation
 
@@ -101,3 +101,8 @@ Cet ensemble de test peut faire l'objet d'un plan de test complet et détaillé,
 #### _Recette_
 
 Le dossier doit indiquer la date précise de la recette, fonctionnelle et technique, ainsi que les éventuelles réserves émises par l'entreprise à l'installation.
+
+## Voir aussi
+
+* link:https://www.squashtest.com/[SquashTest]
+* link:https://kiwitcms.org/[KiwiTCMS]
