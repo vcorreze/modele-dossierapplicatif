@@ -1,7 +1,7 @@
 ////
 README.adoc
 
-SPDX-FileCopyrightText: 2023 Vincent Corrèze
+SPDX-FileCopyrightText: 2023-2025 Vincent Corrèze
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
@@ -90,7 +90,7 @@ Les contributions sont attendues sous la forme de tickets où de push request gi
 
 ## Conditions d'utilisation
 
-* Copyright (c) 2023-2024 Vincent Corrèze et contributeurs
+* Copyright (c) 2023-2025 Vincent Corrèze et contributeurs
 * Ce modèle est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0] : Creative Commons Attribution - Partage à l'identique V4.0
 * Le modèle de dossier d'architecture utilisé est (c) Bertrand Florat et contributeurs, il est soumis à la licence https://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0].
 * Vous pouvez créer votre propre modèle issu de celui-ci dès lors :
