@@ -23,27 +23,31 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 
 [cols="1s,4,4"]
 |=======================================================================
-|Terme |Signification |Commentaire
+|Terme | Signification |Commentaire
 
-|DCP|Donnée à Caractère Personnel| Toute information se rapportant à une personne physique identifiée ou identifiable (RGPD, art. 4, 1)
+|DCP| Donnée à Caractère Personnel | Toute information se rapportant à une personne physique identifiée ou identifiable (RGPD, art. 4, 1)
 
-|DMIA|Durée Maximale d'Interruption Admissible|expression de besoin de disponibilité des différents métiers ou services, dans une organisation. Elle est aussi appelée le DIMA pour délai d'indisponibilité maximal autorisé ou admissible. En anglais _MTPD (Maximum Tolerable Period of Disruption)_. On parle aussi de _RPO (Recovery Point Objective)_
+|DMIA| Durée Maximale d'Interruption Admissible | C'est l'expression du besoin de disponibilité des différents métiers ou services, dans une organisation. Elle est aussi appelée le DIMA pour délai d'indisponibilité maximal autorisé ou admissible. En anglais _MTPD (Maximum Tolerable Period of Disruption)_. Elle additionne le RTO et le WRT (voir ces termes) : `+DMIA = RTO + WRT+`.
 
-|EBIOS RM|Méthode d’évaluation des risques en informatique|Méthode d’évaluation des risques en informatique, permettant d’apprécier les risques Sécurité des systèmes d’information (entités et vulnérabilités, méthodes d’attaques et éléments menaçants, éléments essentiels et besoins de sécurité…), de contribuer à leur traitement en spécifiant les exigences de sécurité à mettre en place, de préparer l’ensemble du dossier de sécurité nécessaire à l’acceptation des risques et de fournir les éléments utiles à la communication relative aux risques. Elle est compatible avec les normes ISO 15408 (critères communs) et ISO 27002
+|EBIOS RM| Méthode d’évaluation des risques en informatique | Méthode d’évaluation des risques en informatique, permettant d’apprécier les risques Sécurité des systèmes d’information (entités et vulnérabilités, méthodes d’attaques et éléments menaçants, éléments essentiels et besoins de sécurité…), de contribuer à leur traitement en spécifiant les exigences de sécurité à mettre en place, de préparer l’ensemble du dossier de sécurité nécessaire à l’acceptation des risques et de fournir les éléments utiles à la communication relative aux risques. Elle est compatible avec les normes ISO 15408 (critères communs) et ISO 27002
 
-|FAQ|Foire Aux Questions|
+|FAQ| Foire Aux Questions | Liste des questions les plus fréquemment posées, et leur réponse.
 
 |TLP (Marquage)| Marquage _Traffic Light Protocol_ | Initié par le FIRST (Forum of Incident Response and Security Teams) qui en partage une définition faisant référence, le Traffic Light Protocol (TLP) est une convention largement utilisée par les acteurs de la réponse à incidents.
 
-|PDMA|Perte de Données Maximale Admissible|il s’agit du pourcentage de données stockées dans le système qu’il est acceptable de perdre lors d’un incident de production. En anglais _RTO (Recovery Time Objective)_
+|PDMA| Perte de Données Maximale Admissible | il s’agit du pourcentage de données stockées dans le système qu’il est acceptable de perdre lors d’un incident de production. En anglais _RPO : Recovery Point Objective_. Elle équivaut au temps maximum admis entre la dernière sauvegarde et l'incident. Elle détermine par la fréquence et la nature des sauvegardes effectuées.
 
 |PSSI| Politique de Sécurité des Systèmes d'Information | Document de référence interne de la politique de sécurité numérique.
 
 |RGPD| Règlement Général sur la Protection des Données | Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 sur la protection des données personnelles.
 
+| RTO | _Recovery Time Objective_, Objectif de Temps de Récupération | C'est le temps mis à récupérer le fonctionnement d'un système, soit la durée maximum pendant laquelle un service critique peut être interrompu avant sa reprise. Il précède le WRT.
+
 |SI| Système d'Information | L'ensemble organisé des ressources qui permettent de collecter, stocker, traiter et distribuer de l'information. C'est un système socio-technique.
 
-|SLA|_Service Level Agreement_|Accord de niveau de service. Il s'agit de l'engagement réciproque métier-si sur le niveau de qualité de fonctionnement de l'application.
+|SLA| _Service Level Agreement_ |Accord de niveau de service. Il s'agit de l'engagement réciproque métier-si sur le niveau de qualité de fonctionnement de l'application.
+
+| WRT | _Work Recovery Time_, temps de récupération du travail | C'est le temps de travail nécessaire pour rétablir effectivement le service. Il correspond au temps de vérification, de resaisie et de remise en ligne à l'issue de la récupération (après le RTO).
 
 
 |=======================================================================

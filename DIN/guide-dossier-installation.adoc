@@ -88,7 +88,7 @@ Ces éléments permettent en exploitation de connaître les opérations réalis�
 
 Une checklist, ou une procédure complète de test doit permettre de vérifier la conformité technique de l'outil à l'architecture prévue dans le dossier d'architecture.
 
-Ces tests de conformité doivent aussi intégrer le respect des conditions de sécurité de l'application.
+Ces tests de conformité doivent aussi intégrer le respect des conditions de sécurité de l'application, et le bon fonctionnement des sauvegardes.
 
 #### _Plan de test fonctionnel_
 
