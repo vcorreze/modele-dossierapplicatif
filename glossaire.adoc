@@ -71,6 +71,8 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 
 |BAL|Boite Aux Lettres|
 
+|CI/CD|_Continuous Integration/Continuous Deployment_ | C'est la combinaison des pratiques d'intégration continue et de livraison continue ou de déploiement continu. Par métonymie, c'est aussi le terme générique appliqué aux outils le permettant (p. ex Gitlab, Jenkins).
+
 |COTS|_Component Off The Shelf_|il s’agit d’un composant « sur étagère », non développé par l'entité, mais intégré à partir d’un binaire externe. Par exemple : MySQL, Apache
 
 |DA|Dossier d'Architecture|
@@ -91,9 +93,11 @@ WARNING: Merci de respecter l'ordre alphabétique lors des éditions du document
 
 |Log|Historique d'événement|Enregistrement séquentiel dans un fichier ou une base de données de tous les événements affectant un processus particulier (application, activité d'un réseau informatique…). Le journal (en anglais log file ou plus simplement log), désigne alors le fichier contenant ces enregistrements. Généralement datés et classés par ordre chronologique, ces derniers permettent d'analyser pas à pas l'activité interne du processus et ses interactions avec son environnement.
 
-|LTS|_Long Term Support_|support à long terme : version spécifique d’un logiciel dont le support est assuré pour une période de temps plus longue que la normale.
+|LTS|_Long Term Support_|support à long terme : version spécifique d’un logiciel dont le support est assuré pour une période de temps plus longue que la durée de vie classique d'une version.
 
 |OS|_Operating System_|système d’exploitation
+
+|_staging_| Environnement de simulation (pré-production) | Mot anglais désignant l'environnement de pré-production sur lequel un outil est déployé dans les mêmes conditions qu'en production.
 
 |VM|_Virtual Machine_| Machine virtuelle
 
