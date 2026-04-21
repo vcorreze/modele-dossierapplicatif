@@ -60,7 +60,7 @@ Les évolutions de version d'une application sont généralement effectuées sel
 
 - Mise à jour directement sur l'instance de production
 - Construction d'une instance parallèle et migration
-- livraison continue d'évolutions poussées en production, généralement par un outil dédié (DevOps).
+- livraison continue d'évolutions poussées en pré-production (_staging_) puis en production, généralement par un outil dédié (CI/CD).
 
 Quelle que soit la modalité concernée, les éléments ci-dessous doivent être préparés pour assurer une montée de version.
 
