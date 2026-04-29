@@ -1,7 +1,7 @@
 ////
 sources.adoc
 
-SPDX-FileCopyrightText: 2023-2024 Vincent Corrèze
+SPDX-FileCopyrightText: 2023-2026 Vincent Corrèze
 
 SPDX-License-Identifier: CC-BY-SA-4.0
 ////
@@ -24,3 +24,4 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 * Documentation d'exploitation du logiciel VITAM : link:http://www.programmevitam.fr/ressources/DocCourante/html/exploitation/introduction.html#but-de-cette-documentation_[DEX Vitam]
 * Méthodologie Hermes de la confédération suisse, partie résultats : link:https://www.hermes.admin.ch/fr/gestion-du-projet/comprendre/resultats/manuel-d-exploitation.html[HERMES Online]
 * Dossier d'exploitation du logiciel TumoroteK : link:https://tumorotek.github.io/TumoroteK/TumoroteK-DossierExploitation.pdf[DEX TumoroteK]
+* Fiche de description d'application du logiciel Mercator: link:https://www.sourcentis.com/mercator/[Mercator]
